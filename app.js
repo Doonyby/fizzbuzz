@@ -1,6 +1,6 @@
-$document.ready(function() {
+$(document).ready(function() {
 	$('#submitbutton').click(function() {
-		var result = $('#enternumber');
+		var result = $('#enternumber').val();
 		for (var i = 1; i <= result; i++) {
 			if (i % 15 === 0) {
 				$("#output").append('fizzbuzz');
@@ -12,7 +12,7 @@ $document.ready(function() {
 				$("#output").append('buzz');
 			}
 			else {
-				$("#output").append(jim)
+				$("#output").append(i)
 			}
 		};
 	});
