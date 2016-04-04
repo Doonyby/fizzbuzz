@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	$('#submitbutton').click(function() {
+
 		var result = $('#enternumber').val();
 		for (var i = 1; i <= result; i++) {
 			if (i % 15 === 0) {
@@ -16,7 +17,7 @@ $(document).ready(function() {
 			}
 		};
 		$('#enternumber').val('');
-		$(this).reset();
+		(this).reload();
 	});
 });
 
